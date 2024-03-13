@@ -18,9 +18,7 @@
                           'Q&A'=>'qna.php',
                           'Kontakt'=>'kontakt.php'  
                           );
-            foreach($pages as $page_name => $page_url){
-              echo('<p><a href = "'.$page_url.'">'.$page_name.'</a></p>');
-          }
+            echo(generate_menu($pages));
             
         ?> 
       </div>
@@ -33,8 +31,8 @@
       Created and designed by Lívia
     </div>
   </footer>
-    <script src="js/accordion.js"></script>        
-    <script src="js/menu.js"></script>
-    <script src="js/slider.js"></script>
+   <?php
+    add_scripts();
+   ?>
 </body>
 </html>
