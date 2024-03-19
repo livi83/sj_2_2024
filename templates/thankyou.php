@@ -1,12 +1,8 @@
 <?php
-  include('partials/header.php');
-?>
+include('partials/header.php');
+?> 
 <main>
-      <section class="banner">
-        <div class="container text-white">
-          <h1>Ďakujeme</h1>
-        </div>
-      </section>
+      <?php include('partials/banner.php');?>
       <section class="container">
         <div class="row">
           <div class="col-100 text-center">
@@ -14,10 +10,8 @@
           </div>
         </div>
       </section>
-
-
     </main>
     
 <?php
-  include_once('partials/footer.php');
-?>    
+    include_once('partials/footer.php')
+?> 
