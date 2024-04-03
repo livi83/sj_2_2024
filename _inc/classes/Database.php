@@ -9,9 +9,6 @@
     
         protected $connection;
 
-        public function __construct() {
-            $this->connection = $this->connect();
-        }
     
         public function __destruct() {
             // Uzatvorenie spojenia s databázou
