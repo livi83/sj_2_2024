@@ -42,7 +42,31 @@
             return $result;
         }
 
-
+        public function select_single(){
+            if(isset($_GET['id']) && is_numeric($_GET['id'])) {
+                $id = $_GET['id'];
+                try{
+                    $query = $this->db->prepare("SELECT * FROM portfolio WHERE id = ?");
+                    $query->execute([$id]);
+                    $portfolio = $query->fetch(); // Using fetch() as we expect only one row
+                    if($portfolio) {
+                        return $portfolio;
+                    } else {
+                        // If no portfolio item found with the given ID
+                        header("HTTP/1.0 404 Not Found");
+                        header("Location: 404.php");
+                        die();
+                    }
+                } catch(PDOException $e){
+                    echo($e->getMessage());
+                } 
+            } else {
+                // If ID is not set or not valid
+                header("HTTP/1.0 400 Bad Request");
+                header("Location: 400.php");
+                die();
+            }
+        }
 
         }
 
