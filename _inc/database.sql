@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 16, 2024 at 06:24 PM
+-- Generation Time: Apr 16, 2024 at 07:07 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -41,7 +41,7 @@ CREATE TABLE `contact` (
 
 INSERT INTO `contact` (`id`, `name`, `email`, `message`, `acceptance`) VALUES
 (45, 'a@a.sk', 'a@a.sk', 'a@a.sk', 1),
-(49, 'b@a.sk', 'b@a.sk', 'b@a.sk', 1);
+(50, '', 'b@b.sk', 'bbb', NULL);
 
 -- --------------------------------------------------------
 
@@ -107,7 +107,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `email`, `password`, `role`) VALUES
-(1, 'admin', 'admin', 0);
+(1, 'admin@admin.sk', 'admin', 0);
 
 --
 -- Indexes for dumped tables
@@ -145,7 +145,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT for table `portfolio`
