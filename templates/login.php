@@ -20,7 +20,6 @@
                         
                         $email = $_POST['email'];
                         $password = $_POST['password'];
-                       
                         $user = new User();
                         //tu bude vzdy true alebo false
                         $login_success = $user->login($email,$password);
@@ -28,11 +27,9 @@
                             header('Location: admin.php');
                             exit;
                         }else{
-
                             echo 'Nesprávne meno alebo heslo';
-
                         }
-
+                        
                     }
                 
                 ?>
