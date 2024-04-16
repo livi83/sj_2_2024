@@ -15,9 +15,8 @@
                 </form>
 
                 <?php
-                
+            
                     if(isset($_POST['user_login'])){
-                        
                         $email = $_POST['email'];
                         $password = $_POST['password'];
                         $user = new User();
@@ -29,15 +28,11 @@
                         }else{
                             echo 'Nesprávne meno alebo heslo';
                         }
-                        
                     }
                 
                 ?>
 
-
-
-
-                </div>
+            </div>
         </div>
     </section> 
 </main>

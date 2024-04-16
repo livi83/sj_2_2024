@@ -1,8 +1,8 @@
 <?php
-    include('partials/header.php');
+include('partials/header.php');
 ?>
 <main>
-     <section class="container">
+    <section class="container">
         <div class="row">
             <div class="col-100 text-left">
                 <h1>Admin rozhranie</h1>
@@ -10,8 +10,12 @@
                 <?php
                     $contact_object = new Contact();
                     $contacts = $contact_object->select();
-                    print_r($contacts);
                     echo '<table class="admin-table">';
+                    echo '<tr><th>Name</th>
+                              <th>Email</th>
+                              <th>Message</th>
+                              <th>Acceptance</th>
+                          </tr>';
                     foreach($contacts as $c){
                         echo '<tr>';
                         echo '<td>'.$c->name;'</td>';
@@ -30,3 +34,4 @@
 <?php
     include('partials/footer.php');
 ?>
+
