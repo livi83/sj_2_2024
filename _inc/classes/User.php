@@ -22,6 +22,7 @@
                 $query_run->execute($data);
                 if($query_run->rowCount() == 1) {
                     // login je uspesny
+                    $_SESSION['logged_in'] = true;
                     return true;
                 } else {
                     return false;
