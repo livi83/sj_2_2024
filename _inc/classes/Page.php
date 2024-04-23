@@ -33,6 +33,11 @@
                     $result .= '<link rel="stylesheet" href="../assets/css/banner.css">';
                     $result .= '<link rel="stylesheet" href="../assets/css/form.css">';
                     break;
+                
+                case 'login':
+                    $result .= '<link rel="stylesheet" href="../assets/css/banner.css">';
+                    $result .= '<link rel="stylesheet" href="../assets/css/form.css">';
+                    break;
                
                 case 'portfolio':
                     $result .= '<link rel="stylesheet" href="../assets/css/portfolio.css">';
