@@ -18,7 +18,18 @@
                 case 'home':
                     $result .= '<link rel="stylesheet" href="../assets/css/slider.css">';
                     break;
-                case 'kontakt' || 'kontakt-update'||'register':
+                    
+                case 'kontakt':
+                    $result .= '<link rel="stylesheet" href="../assets/css/banner.css">';
+                    $result .= '<link rel="stylesheet" href="../assets/css/form.css">';
+                    break;
+
+                case 'kontakt-update':
+                    $result .= '<link rel="stylesheet" href="../assets/css/banner.css">';
+                    $result .= '<link rel="stylesheet" href="../assets/css/form.css">';
+                    break;
+                
+                case 'register':
                     $result .= '<link rel="stylesheet" href="../assets/css/banner.css">';
                     $result .= '<link rel="stylesheet" href="../assets/css/form.css">';
                     break;
