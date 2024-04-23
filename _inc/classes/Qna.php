@@ -17,6 +17,19 @@
             }   
         }
 
+        public function delete(){
+            try{
+                $data = array(
+                    'qna_id' => $_POST['delete_qna']
+                );
+                $query = "DELETE FROM qna WHERE id = :qna_id";
+                $query_run = $this->db->prepare($query);
+                $query_run->execute($data);
+            }catch(PDOException $e){
+                echo $e->getMessage();
+            }
+        }
+
     }
 
 ?>
