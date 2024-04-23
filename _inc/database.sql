@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 23, 2024 at 07:31 PM
+-- Generation Time: Apr 23, 2024 at 07:35 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -40,8 +40,8 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`id`, `name`, `email`, `message`, `acceptance`) VALUES
-(56, 'Test', 'test@test.sk', 'Toto je testovacia správa', NULL),
-(57, 'Test 2 ', 'test2@test.sk', 'Toto je druhá testovacia správa', NULL);
+(56, 'Test', 'test@test.sk', 'Toto je testovacia správa', 1),
+(57, 'Test 2 ', 'test2@test.sk', 'Toto je druhá testovacia správa', 1);
 
 -- --------------------------------------------------------
 
